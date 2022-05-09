@@ -19,6 +19,7 @@ public class K_Code_Locals {
         // 第一步，输入参数
         String relative_path = "sample/HelloWorld.class";
         String name_and_type = "test:()V";
+        name_and_type = "add:()I";
 
         // 第二步，读取数据
         String filepath = FileUtils.getFilePath(relative_path);

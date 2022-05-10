@@ -1,24 +1,25 @@
 package sample;
 
+import java.util.Date;
+
 public class HelloWorld implements Cloneable {
-    private static final int intValue = 10;
+
+    static {
+        System.out.println("class initialization");
+    }
 
     public void test() {
-        int a = 1;
-        int b = 2;
-        int c = a + b;
+        GoodChild child = new GoodChild("lucy", 8);
     }
 
-    public int add() {
-        synchronized (this) {
-            int a = 1;
-            int b = 2;
-            return a + b;
-        }
+    public void test(int a, int b) {
+        int val = Math.max(a, b);
+        System.out.println(val);
     }
 
-    public static void main(String[] args) {
-        System.out.println("HelloWorld");
+    public void printDate() {
+        Date now  = new Date();
+        System.out.println(now);
     }
 }
 

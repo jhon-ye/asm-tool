@@ -21,6 +21,38 @@ public class HelloWorld implements Cloneable {
         Date now  = new Date();
         System.out.println(now);
     }
+
+     public void test(int val) {
+        switch (val) {
+            case 1:
+                System.out.println("val = 1");
+                break;
+            case 2:
+                System.out.println("val = 2");
+                break;
+            case 3:
+                System.out.println("val = 3");
+                break;
+            default:
+                System.out.println("value is unknown");
+        }
+     }
+     
+     public void test2(int max) {
+         for (int i = 0; i < max; i++) {
+             System.out.println(i);
+         }
+     }
+
+     public void test3() {
+        try {
+            System.out.println("before sleep");
+            Thread.sleep(1000);
+            System.out.println("after sleep");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+     }
 }
 
 

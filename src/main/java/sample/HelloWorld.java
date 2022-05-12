@@ -53,6 +53,11 @@ public class HelloWorld implements Cloneable {
             e.printStackTrace();
         }
      }
+
+     public void test4() {
+         System.out.println("method enter");
+         System.out.println("this is test method");
+     }
 }
 
 
